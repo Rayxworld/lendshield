@@ -1,7 +1,17 @@
 import sqlite3
 import json
 
-DB_NAME = "loans.db"
+import sys
+import os
+
+if hasattr(sys, '_MEIPASS'):
+    # Frozen: Persistence next to the executable
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    # Dev: Persistence in the backend directory
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+DB_NAME = os.path.join(BASE_DIR, "loans.db")
 
 def init_db():
     conn = sqlite3.connect(DB_NAME)

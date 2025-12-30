@@ -3,7 +3,14 @@ import os
 from sklearn.ensemble import RandomForestClassifier
 from data_loader import load_and_prep_data
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+import sys
+
+def get_base_dir():
+    if hasattr(sys, '_MEIPASS'):
+        return sys._MEIPASS
+    return os.path.dirname(os.path.abspath(__file__))
+
+BASE_DIR = get_base_dir()
 MODEL_DIR = os.path.join(BASE_DIR, 'models')
 MODEL_PATH = os.path.join(MODEL_DIR, 'risk_model.pkl')
 

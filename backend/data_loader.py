@@ -2,8 +2,15 @@ import pandas as pd
 import numpy as np
 import os
 
+import sys
+
 # Define path relative to this file
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+def get_base_dir():
+    if hasattr(sys, '_MEIPASS'):
+        return sys._MEIPASS
+    return os.path.dirname(os.path.abspath(__file__))
+
+BASE_DIR = get_base_dir()
 DATA_PATH = os.path.join(BASE_DIR, 'data', 'train_u6lujuX_CVtuZ9i.csv')
 
 def load_and_prep_data():

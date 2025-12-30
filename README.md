@@ -10,20 +10,16 @@ Loan underwriting is slow, opaque, and vulnerable to fraud.
 Banks need faster, more transparent risk assessment tools.
 
 ## Solution
-LendShield combines machine learning, fraud heuristics, and interactive dashboards
-into a secure, offline-first desktop application.
+LendShield is a **hybrid AI platform** that runs as a **secure Web Dashboard** or an **offline-first Desktop Application**. It combines machine learning, fraud heuristics, and interactive dashboards to modernize underwriting.
 
 ## Key Features
-- AI-powered loan risk scoring
-- Fraud detection and alerting
-- Portfolio risk simulation
-- Explainable decision insights
-- Desktop-first workflow (Electron)
+- **AI Risk Engine**: Instant credit scoring and default prediction.
+- **Fraud Guard**: Automatic detection of anomalies and ID mismatches.
+- **Web & Desktop**: Deploys as a cloud web app or a secure local executable.
+- **Explainable Decisions**: Plain-English reasons for every AI approval/rejection.
 
 ## Architecture
-Electron (React UI)
-→ FastAPI (Local AI Engine)
-→ ML Models + CSV Data + SQLite
+React (Web/Desktop UI) ↔ FastAPI (AI Engine) ↔ SQLite + Scikit-Learn
 
 ## Tech Stack
 Frontend: React, Electron, Recharts  

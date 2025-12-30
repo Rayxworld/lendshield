@@ -13,6 +13,6 @@ The model uses:
 ### Run Locally
 ```bash
 pip install -r requirements.txt
-python train_model.py
+python risk_model.py
 python main.py
 ```
