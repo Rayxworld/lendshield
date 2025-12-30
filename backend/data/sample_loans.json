@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Wonderland",
+    "credit_score": 750,
+    "annual_income": 80000,
+    "loan_amount": 20000,
+    "doc_id_match": true,
+    "score": 90,
+    "risk_level": "Low",
+    "reasoning": "Excellent credit score boosts rating.",
+    "is_fraud": false,
+    "alerts": []
+  },
+  {
+    "id": 2,
+    "name": "Bob Builder",
+    "credit_score": 580,
+    "annual_income": 40000,
+    "loan_amount": 15000,
+    "doc_id_match": true,
+    "score": 40,
+    "risk_level": "High",
+    "reasoning": "Low credit score reduces eligibility.",
+    "is_fraud": false,
+    "alerts": []
+  },
+  {
+    "id": 3,
+    "name": "Fraudster X",
+    "credit_score": 700,
+    "annual_income": 100000,
+    "loan_amount": 50000,
+    "doc_id_match": false,
+    "score": 85,
+    "risk_level": "Low",
+    "reasoning": "Standard profile meets criteria.",
+    "is_fraud": true,
+    "alerts": ["Name found in fraud blacklist.", "Document ID does not match provided details."]
+  }
+]
