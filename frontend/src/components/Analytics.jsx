@@ -11,7 +11,7 @@ import {
   ResponsiveContainer
 } from 'recharts';
 
-const API = axios.create({ baseURL: 'http://127.0.0.1:8000' });
+const API = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000' });
 
 export default function Analytics() {
   const [data, setData] = useState([]);
