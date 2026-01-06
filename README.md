@@ -29,8 +29,6 @@ Storage: SQLite, CSV
 ## Getting Started
 See `/backend/README.md` and `/frontend/README.md`
 
-## Demo
-📹 Demo video link (to be added)
 
 ## Hackathon
 Built for **LMA EDGE Hackathon 2026**
